@@ -1,0 +1,454 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --main: rgb(94 61 216);
+    --gray:grey;
+    --rose:rgb(242, 76, 76);
+  }
+body{
+    overflow-x: hidden;
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    padding-top: 30px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.container{
+    width: 80vw;
+    /* background-color: red; */
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:15px 40px
+}
+
+header div{
+    display: flex;
+}
+
+header nav{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    /* background-color: black; */
+}
+
+footer nav a,header nav a{
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    font-size: 14px;
+}
+button{
+    border-radius: 4px;
+    border: none;
+    padding: 5px 15px;
+    cursor: pointer;
+}
+header button{
+    background-color: var(--rose);
+    color: white;
+    
+    
+    height: 90%;
+    margin: auto;
+}
+
+header button:hover{
+    color: var(--rose);
+    background-color: white;
+    border: 1px solid rgb(242, 76, 76)
+}
+/* bookmanager section */
+.bookmark-manager{
+    display: flex;
+    justify-content: space-between;
+    gap:150px;
+    padding: 40px;
+}
+/* div of the image */
+.bookmark-manager-image{
+    display: flex;
+    justify-content: center;
+ }
+
+.bookmark-manager img{
+    width: 120%;
+}
+
+.bookmark-manager-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width:100%;
+}
+
+.bookmark-manager-text h1{
+    font-size: 43px;
+    line-height: 50px;
+}
+
+.bookmark-manager-text p{
+    color: var(--gray);
+    line-height: 25px;
+    padding-bottom: 15px;
+}
+
+
+.chrome-button{
+    background-color: var(--main);
+    color: white;
+    box-shadow: 0 3px 6px lightblue
+}
+
+.chrome-button:hover{
+    color: var(--main);
+    background-color: white;
+    border: 1px solid rgb(94 61 216);
+    box-shadow: 0 3px 6px lightblue
+}
+.firefox-button{
+    background-color:rgb(222, 216, 216);
+    box-shadow: 0 3px 6px lightblue
+}
+
+.firefox-button:hover{
+    border:1px solid black;
+    background-color: white;
+    box-shadow: 0 3px 6px lightblue
+}
+
+/* features section */
+
+.features-intro{
+    width: 40%;
+    margin: auto;
+    padding-bottom: 20px;
+}
+.features-intro p{
+    color: var(--gray);
+    line-height: 25px;
+}
+
+.bookmark-manager-text h1,p{
+    padding-bottom: 10px;
+}
+
+.features{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.features-intro h2{
+    padding-bottom: 20px;
+}
+[data-tab-content] {
+    display: none;
+}
+.active[data-tab-content] {
+    display: block;
+}
+
+.active[data-tab-content] {
+    display: block;
+    display: flex;
+    justify-content:space-around ;
+    padding-top: 40px;
+}
+
+.active[data-tab-content] img{
+    width:30%;
+    
+}
+
+.active[data-tab-content] .tab-text{
+    width:30%;
+    padding-top: 40px;
+    width:40%
+}
+
+.active[data-tab-content] .tab-text h3{
+    padding-bottom: 20px;
+}
+
+.active[data-tab-content] .tab-text p{
+    color: gray;
+    padding-bottom: 20px;
+    line-height: 25px;
+}
+
+.active[data-tab-content] .tab-text button{
+    padding: 10px 20px;
+    background-color: var(--main);
+    color: white;
+}
+
+.active[data-tab-content] .tab-text button:hover{
+    padding: 10px 20px;
+    color: var(--main);
+    background-color: white;
+    border:1px solid rgb(94 61 216);
+}
+
+.tabs{
+    display: flex;
+    justify-content: space-around;
+    list-style-type:none;
+    border-bottom:1px solid #f5eded;
+    width:50%;
+    margin: auto;
+}
+.tab{
+    cursor: pointer;
+    padding: 10px;
+    color: gray;
+}
+
+.tab.active{
+    border-bottom:2px solid rgb(242, 76, 76);
+    color:black;
+}
+
+.tab:hover{
+    color: var(--rose);
+}
+
+
+/* download extensions section download extensions section download extensions section  */
+.browsers{
+    display: flex;
+    justify-content: space-around;
+    height:238px;
+    position: relative;
+    padding: 20px;
+    align-items: center;
+}
+
+.chrome,.firefox,.opera{
+    width:15%;
+    box-shadow: 0 3px 6px lightblue;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+}
+
+.browser-img{
+    width:30%;
+    padding-bottom: 20px;
+}
+.dots{
+    width:120%;
+    padding-bottom: 10px;  
+}
+.chrome{
+    left:10%;
+}
+.firefox{
+    left:35%;
+    top:23%;
+}
+.opera{
+    left:60%;
+    top:35%;
+}
+
+.browsers button{
+    background-color: var(--main);
+    color: white;
+    width:90%
+}
+
+.browsers button:hover{
+    color: var(--main);
+    background-color: white;
+    border: 2px solid rgb(94 61 216);
+}
+
+.download-extensions{
+    padding-top: 7rem;
+    padding-bottom: 4rem;
+}
+
+.browsers h4{
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.browsers p{
+    color: gray;
+    padding-bottom: 20px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.download-extensions-intro{
+    width: 45%;
+    margin: auto;
+    padding-bottom: 15px;
+}
+
+.download-extensions-intro h2{
+    
+    padding-bottom: 15px;
+}
+
+.download-extensions-intro p{
+    line-height: 25px;
+    color: gray;
+}
+/* frequently asked questions section frequently asked questions section */
+
+.questions .questionbox{
+    width: 40%;
+    margin: auto;
+    border-top:1px solid #f6f4f4;
+    border-bottom:1px solid #f6f4f4;
+    padding:10px 0;
+}
+.questions{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.question-label{
+    display: flex;
+    justify-content: space-between;
+}
+
+.question-label img{
+    width:15px;
+    height: 10px;
+}
+.question-label:hover{
+    color: var(--rose);
+    cursor: pointer;
+}
+.frequently-asked-questions{
+    padding-top: 30px;
+}
+
+.frequently-asked-questions button{
+    color: white;
+    background-color: var(--main);
+    padding-top:10px;
+    padding-bottom: 10px;
+}
+.frequently-asked-questions-button{
+    display: flex;
+    justify-content: center;
+    padding:20px 0 60px 0
+}
+.frequently-asked-questions button:hover{
+    background-color: white;
+    color: var(--main);
+    border:1px solid rgb(94 61 216)
+}
+.frequently-asked-questions-intro{
+    width:45%;
+    margin:auto;
+    padding-bottom: 40px;
+}
+
+.frequently-asked-questions-intro h2{
+    padding-bottom: 10px;
+}
+
+.frequently-asked-questions-intro p{
+    color: gray;
+    line-height: 25px;
+}
+.answer{
+    position: relative;
+    height: 0;
+    overflow:hidden;
+    transition: 0.5s;
+    overflow-y: auto;
+}
+
+ .questionbox.active .answer{
+    height: 100px;
+    padding-top: 10px;
+}
+
+.up-to-date{
+    background-color:var(--main);
+    color: white;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.up-to-date h2{
+    padding-bottom: 10px;
+}
+
+.up-to-date p{
+    letter-spacing: 3px;
+    font-size: 10px;
+}
+form{
+    display: flex;
+    justify-content: center;
+}
+
+form input{
+    margin-right: 20px;
+    outline-color: var(--rose);
+}
+
+form button{
+    background-color: var(--rose);
+    color: white;
+}
+
+form button:hover{
+    color: var(--rose);
+    background-color: white;
+    border: 1px solid rgb(242, 76, 76);
+}
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(29 29 73);
+    padding: 10px;
+}
+
+.footer-navigation{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 14px;
+}
+
+a i{
+    color: white;
+}
+footer nav a{
+    color: white;
+}
+
+footer nav a:hover{
+    color: var(--rose);
+    cursor: pointer;
+}
+
+.social-icons{
+    width:50px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
